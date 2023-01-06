@@ -1,0 +1,76 @@
+.tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 100%;
+    text-align: center;
+    padding:0px 5px;
+    }
+table {
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 0.9em !important;
+    text-align: right !important;
+    vertical-align: middle !important;
+    box-shadow: 2px 2px 5px rgb(221, 221, 221);
+    border-radius: 5px 5px 0 0 !important;
+    overflow: hidden; /*if the overflow isn't hidden, the border radius dosn't work*/
+}
+th{
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+tr{
+    border-bottom: 1px solid #8000003f;
+}
+tbody tr:last-of-type{
+    border-bottom: 2px solid #800000;
+}
+th, td {
+    padding: 5px 10px !important;
+    border: 0px !important;
+    vertical-align: middle !important;
+}
+td{
+    white-space: nowrap;
+}
+tr:nth-child(2n){
+    background-color: #F5F5F5;
+}
+tr:nth-child(2n-1)>td{
+    background-color: white;
+}
+/*just for tables where the first row is also index*/
+.mallas th:first-child, .mallas td:first-child{
+    text-align: center;
+    font-weight: bold;
+}
+/*just for tables where the unis are €/m2*/
+.mallas td:not(:first-child):after{
+    content: " €/m\00B2";
+}
+/*parasols*/
+.parasoles th{
+    text-align: center;
+    font-weight: bold;
+}
+.parasoles tr:first-child{
+    font-weight: bold;
+}
+/*Alfombras y tarimas*/
+.alfombras th, .tarimas th{
+    text-align: center;
+}
+.alfombras th:first-child, .tarimas th:first-child{
+    background-color: #F5F5F5;
+}
+/*Velas*/
+.velas td, .velas th{
+    text-align: center;
+}
+.velas td:first-child{
+    text-align: left;
+    font-weight: bold;
+}
